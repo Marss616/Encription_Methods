@@ -17,6 +17,6 @@ def my_hash(data):
     return hash_value # Return the hash value
 
 # Example usage
-data = "Hello, World!"
+data = input("Enter data to hash: ")
 hashed_data = my_hash(data)
 print(hashed_data)
