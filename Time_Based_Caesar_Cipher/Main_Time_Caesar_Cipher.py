@@ -6,6 +6,8 @@ def create_shift_key_with_date():
     date = datetime.datetime.now()
     date_split = str(date).split(" ")
     shift = 0  # Initialize shift value
+    # sprint("current time: ")
+    # print(datetime.datetime.now())
     
     for i, v in enumerate(date_split):
         if i == 1:  # This selects the time part of the date
@@ -33,6 +35,6 @@ shift = create_shift_key_with_date()  # Get the shift from the current date and 
 time = datetime.datetime.now()
 encrypted_text = caesar_cipher(text, shift)
 
-print(shift)
-print(encrypted_text)
-print(time)
+print("current Shift: ", shift)
+print("current Encripted text: ", encrypted_text)
+print("current Time: ", time)
